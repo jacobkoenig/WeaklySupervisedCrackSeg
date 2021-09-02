@@ -2,7 +2,7 @@
 
 This repository contains the code implementation of our weakly-supervised crack segmentation method from the paper: _A Weakly-Supervised Surface Crack Segmentation Method using Localisation with a Classifier and Thresholding_.
 
-König, J., Jenkins, M.D., Mannion, M., Barrie, P. and Morison, G., 2021. A Weakly-Supervised Surface Crack Segmentation Method using Localisation with a Classifier and Thresholding. [[arXiv (TBA)]]()
+König, J., Jenkins, M.D., Mannion, M., Barrie, P. and Morison, G., 2021. A Weakly-Supervised Surface Crack Segmentation Method using Localisation with a Classifier and Thresholding. [[arXiv]](https://arxiv.org/abs/2109.00456)
 
 #### Abstract
 Surface cracks are a common sight on public infrastructure nowadays. Recent work has been addressing this problem by supporting structural maintenance measures using machine learning methods that segment surface cracks from their background so that they are easy to localize. However, a common issue with those methods is that to create a well functioning algorithm, the training data needs to have detailed annotations of pixels that belong to cracks. Our work proposes a weakly supervised approach which leverages a CNN classifier to create surface crack segmentation maps. We use this classifier to create a rough crack localisation map by using its class activation maps and a patch based approach and fuse this with a thresholding based approach to segment the mostly darker crack pixels. The classifier assists in suppressing noise from the background regions, which commonly are incorrectly highlighted as cracks by standard thresholding methods. We focus on the ease of implementation of our method and it is shown to perform well on several surface crack datasets, segmenting cracks efficiently even though the only data that was used for training were simple classification labels. 
@@ -153,9 +153,16 @@ For debugging purposes one may also want to observe the interim outputs of our m
 
 # Reference
 
-If you usesour proposed model or code please cite our paper:
+If you use our proposed model or code please cite our paper:
 
-**TBA**
+```
+@article{konig2021aweakly,
+  title={A Weakly-Supervised Surface Crack Segmentation Method using Localisation with a Classifier and Thresholding},
+  author={K{\"o}nig, Jacob and Jenkins, Mark and Mannion, Mike and Barrie, Peter and Morison, Gordon},
+  journal={arXiv preprint arXiv:2109.00456},
+  year={2021}
+}
+```
 
 # Results
 Sample results or our *weakly supervised* method using ResNet50 classifier in comparison with a *fully supervised U-Net* and the ground truth (GT):
